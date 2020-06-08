@@ -10,7 +10,7 @@ object[key] = value
 return object
 }
 
-function deleteFromObjectByKey(object, key) {
+function deleteFromObjectByKey(object, key, value) {
   delete key.object;
   return Object.assign({}, object, { [key]: value })
   }
